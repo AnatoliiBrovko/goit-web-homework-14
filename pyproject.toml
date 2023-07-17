@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "module-14"
+version = "0.1.0"
+description = ""
+authors = ["AnatoliiBrovko <116496024+AnatoliiBrovko@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "module_14"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "1.10.9"
+sqlalchemy = "^2.0.19"
+psycopg2 = "^2.9.6"
+fastapi = "^0.100.0"
+uvicorn = {extras = ["standard"], version = "^0.23.0"}
+libgravatar = "^1.0.4"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.6"
+cloudinary = "^1.33.0"
+fastapi-mail = "1.2.8"
+fastapi-limiter = "^0.1.5"
+redis = "^4.6.0"
+alembic = "^1.11.1"
+pytest = "^7.4.0"
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
